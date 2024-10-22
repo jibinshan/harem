@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./*.{html,js}"],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        marcellus: ['Marcellus SC', 'serif'],
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+    <title>Harem</title>
+    <link rel="icon" type="image/png" href="public/images/logo.png">
+</head>
+
+<body>
+    <section class="flex flex-col min-h-screen  text-white bg-center bg-cover bg-blend-overlay bg-fixed bg-black/70"
+        style="background-image: url('public/images/hero.png')">
+
+
+        <!-- Navbar -->
+        <div class="flex items-center h-20">
+            <!-- Navbar Container -->
+            <div class="mx-auto relative px-5 max-w-screen-xl w-full flex items-center justify-end">
+                <!-- Navbar Logo -->
+                <img src='public/images/logo.png' alt="logo"
+                    class="absolute left-1/2 top-10 -translate-y-1/2 -translate-x-1/2">
+            </div>
+        </div>
+
+        <!-- Hero Section Content -->
+        <div class="flex-1 flex items-center">
+            <div class="text-center mx-auto flex flex-col items-center justify-center gap-10">
+                <h1 class=" flex justify-center items-center gap-2">
+                    <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                    <span
+                        class="text-2xl font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[7px]">HAREM</span>
+                    <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                </h1>
+                <p class="text-[#DCCF90] text-center text-3xl lg:text-6xl font-medium leading-10 lg:leading-[73.6px] tracking-[15px] lg:tracking-[30px] uppercase"
+                    style=" font-family: 'Marcellus SC' , serif;">
+                    Experience<br /> the Flavors <br />of Turkey</p>
+                <a class=" px-6 py-4 flex w-fit items-center gap-3 bg-[#DCCF90] text-black border-[1px] border-[#FBEAD2] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
+                    href="#contact">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f]">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
+            <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                <span class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">About
+                    us</span>
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+            </h3>
+            <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
+                style=" font-family: 'Marcellus SC' , serif;">
+                A Journey Through<br /> Turkish Flavors </h1>
+            <p class="lg:max-w-[600px] px-4 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
+                Established in the heart of [City Name], Harem brings the rich culinary traditions of Turkey to your
+                table. Our chefs craft each dish with authentic Turkish ingredients and techniques passed down through
+                generations. The name 'Harem' reflects the warmth, elegance, and care with which we treat our guests - a
+                tribute to the royal palaces of the Ottoman Empire, where the finest food and hospitality were offered.
+            </p>
+
+        </div>
+    </section>
+    <section class="relative flex h-full w-full items-center justify-center bg-[#161616]">
+        <div class="flex flex-col lg:flex-row h-full w-full items-center justify-center gap-6 p-0">
+            <div class="w-full lg:w-1/2 p-0">
+                <img src="public/images/hero.png" alt="hero" class="lg:h-[550px]">
+            </div>
+            <div class="h-full lg:w-1/2 py-8 md:py-24 flex flex-col justify-between gap-7 px-8 md:px-24">
+                <h3 class="font-mono uppercase flex gap-2 items-center">
+                    <span
+                        class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">About
+                        us</span>
+                    <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                </h3>
+                <div class="flex flex-col gap-5">
+                    <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-start"
+                        style=" font-family: 'Marcellus SC' , serif;">
+                        A Journey Through<br /> Turkish Flavors </h1>
+                    <p class="lg:max-w-[600px] text-start font-light leading-[160%] text-[#C1B6A6] md:px-0">
+                        Established in the heart of [City Name], Harem brings the rich culinary traditions of Turkey to
+                        your
+                        table. Our chefs craft each dish with authentic Turkish ingredients and techniques passed down
+                        through
+                        generations. The name 'Harem' reflects the warmth, elegance, and care with which we treat our
+                        guests
+                        - a
+                        tribute to the royal palaces of the Ottoman Empire, where the finest food and hospitality were
+                        offered.
+                    </p>
+                </div>
+                <a class=" px-6 py-4 flex w-fit items-center gap-3 border-[1px] border-[#BC995D] text-[#BC995D] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
+                    href="#contact">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
+            <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                <span
+                    class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Dishes</span>
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+            </h3>
+            <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
+                style=" font-family: 'Marcellus SC' , serif;">
+                Featured Dishes</h1>
+
+            <div class="w-full flex flex-col lg:flex-row items-center gap-5 mt-5">
+                <div
+                    class="hidden lg:w-[58px] lg:h-[58px] shrink-0 rounded-full bg-[#161616] lg:flex lg:justify-center lg:items-center text-[#9f986e] rotate-180">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="w-full lg:w-11/12 flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-8">
+                    <div class="flex flex-col gap-5">
+                        <img src="public/images/adanakebab.png" alt="adanakebab">
+                        <div>
+                            <h1 class="text-xl font-medium font-mono uppercase text-[#DCCF90] leading-[30px] tracking-[3px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                Adana Kebab</h1>
+                            <h1 class="text-lg font-light font-mono uppercase text-[#DCCF90] tracking-[5px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                € 120</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <img src="public/images/mezeplatter.png" alt="adanakebab">
+                        <div>
+                            <h1 class="text-xl font-medium font-mono uppercase text-[#DCCF90] leading-[30px] tracking-[3px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                Meze platter</h1>
+                            <h1 class="text-lg font-light font-mono uppercase text-[#DCCF90] tracking-[5px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                € 120</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <img src="public/images/beklava.png" alt="adanakebab">
+                        <div>
+                            <h1 class="text-xl font-medium font-mono uppercase text-[#DCCF90] leading-[30px] tracking-[3px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                baklava</h1>
+                            <h1 class="text-lg font-light font-mono uppercase text-[#DCCF90] tracking-[5px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                € 120</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <img src="public/images/kebabplatter.png" alt="adanakebab">
+                        <div>
+                            <h1 class="text-xl font-medium font-mono uppercase text-[#DCCF90] leading-[30px] tracking-[3px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                Kebab platter</h1>
+                            <h1 class="text-lg font-light font-mono uppercase text-[#DCCF90] tracking-[5px]"
+                                style=" font-family: 'Marcellus SC' , serif;">
+                                € 120</h1>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="hidden lg:w-[58px] lg:h-[58px] shrink-0 rounded-full bg-[#161616] lg:flex lg:justify-center lg:items-center text-[#9f986e]">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
+            <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                <span class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">we
+                    offer</span>
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+            </h3>
+            <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
+                style=" font-family: 'Marcellus SC' , serif;">
+                Unforgettable<br /> Dining Experience </h1>
+            <p class="lg:max-w-[600px] px-2 font-light leading-[160%] text-center text-[#C1B6A6] md:px-0">
+                Bavette was born from a passion for bringing the finest cuts of beef to the table, with a commitment to
+                sustainability and premium quality. Every dish is a labor of love, crafted by our experienced chefs who
+                handpick each cut to ensure perfection.
+            </p>
+            <div class="flex flex-col lg:flex-row lg:gap-12 gap-6 lg:px-24 px-8 mt-8">
+                <div class="bg-[#181818]">
+                    <img src="public/images/food.png" alt="food">
+                    <div class="px-7 py-7 flex flex-col gap-4">
+                        <h1 class="text-2xl font-medium font-mono uppercase text-[#DCCF90] tracking-[5px] text-start"
+                            style=" font-family: 'Marcellus SC' , serif;">
+                            Food</h1>
+                        <p class="lg:max-w-[600px] font-light text-start text-[#C1B6A6] md:px-0">
+                            Bavette was born from a passion for bringing the finest cuts of beef to the table, with a
+                            commitment to sustainability.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#181818]">
+                    <img src="public/images/drinks.png" alt="food">
+                    <div class="px-7 py-7 flex flex-col gap-4">
+                        <h1 class="text-2xl font-medium font-mono uppercase text-[#DCCF90]  tracking-[5px] text-start"
+                            style=" font-family: 'Marcellus SC' , serif;">
+                            Drinks</h1>
+                        <p class="lg:max-w-[600px] font-light text-start text-[#C1B6A6] md:px-0">
+                            Bavette was born from a passion for bringing the finest cuts of beef to the table, with a
+                            commitment to sustainability.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#181818]">
+                    <img src="public/images/atmosphere.png" alt="food">
+                    <div class="px-7 py-7 flex flex-col gap-4">
+                        <h1 class="text-2xl font-medium font-mono uppercase text-[#DCCF90] tracking-[5px] text-start"
+                            style=" font-family: 'Marcellus SC' , serif;">
+                            Atmosphere</h1>
+                        <p class="lg:max-w-[600px]  font-light text-start text-[#C1B6A6] md:px-0">
+                            Bavette was born from a passion for bringing the finest cuts of beef to the table, with a
+                            commitment to sustainability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative flex h-screen w-full items-center justify-center "
+        style="background-image: url('public/images/privateandgroupingbg.png')">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
+            <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                <span
+                    class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Booking</span>
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+            </h3>
+            <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
+                style=" font-family: 'Marcellus SC' , serif;">
+                Private <br /> & Group Dining </h1>
+            <p class="lg:max-w-[600px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
+                At Bavette, we specialize in creating memorable dining experiences, whether you're seeking an intimate
+                gathering or a grand celebration. Our private and group dining options are designed to meet your unique
+                needs with personalized service, exceptional food, and a welcoming atmosphere.
+            </p>
+            <a class=" px-6 py-4 flex w-fit items-center gap-3 border-[1px] border-[#BC995D] text-[#BC995D] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
+                href="#contact">
+                Contact Us
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+    <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
+            <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+                <span
+                    class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Reviews</span>
+                <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
+            </h3>
+            <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
+                style=" font-family: 'Marcellus SC' , serif;">
+                Hear Our Guests </h1>
+            <div class="flex flex-col lg:flex-row lg:gap-12 gap-6 lg:px-24 px-8 mt-8">
+                <div class="bg-[#181818] pb-11">
+                    <div class="px-7 py-7 flex flex-col gap-6">
+                        <div class="flex gap-3">
+                            <img src="public/images/annamathew.png" alt="review">
+                            <div>
+                                <p class="text-xl font-light tracking-[2px] text-start text-white">
+                                    Anna Mathew
+                                </p>
+                                <p class="text-[#9c9995] font-thin">
+                                    one day ago
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 text-[#bc995d]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="lg:max-w-[600px] px-2 font-light text-start text-[#C1B6A6] md:px-0">
+                            Bavette delivers an unforgettable
+                            steak experience! The food, service, and ambiance are second to none. We will definitely be
+                            coming back We booked
+                            private dining for our
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#181818] pb-11">
+                    <div class="px-7 py-7 flex flex-col gap-6">
+                        <div class="flex gap-3">
+                            <img src="public/images/jerin.png" alt="review">
+                            <div>
+                                <p class="text-xl font-light tracking-[2px] text-start text-white">
+                                    Gerrin Tom
+                                </p>
+                                <p class="text-[#9c9995] font-thin">
+                                    one day ago
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 text-[#bc995d]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="lg:max-w-[600px] px-2 font-light text-start text-[#C1B6A6] md:px-0">
+                            We booked private dining for our anniversary, and everything was perfect. The steak was
+                            melt-in-your-mouth delicious, and the staff was amazing!
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#181818] pb-11">
+                    <div class="px-7 py-7 flex flex-col gap-6">
+                        <div class="flex gap-3">
+                            <img src="public/images/mery.png" alt="review">
+                            <div>
+                                <p class="text-xl font-light tracking-[2px] text-start text-white">
+                                    Mery Elza
+                                </p>
+                                <p class="text-[#9c9995] font-thin">
+                                    one day ago
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 text-[#bc995d]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="lg:max-w-[600px] px-2 font-light text-start text-[#C1B6A6] md:px-0">
+                            Best steak I`ve ever had! The quality of the meat was outstanding, and the truffle fries
+                            were to die for. Highly recommend!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex h-full w-full items-center justify-center bg-[#0f0f0f] pt-8" id="contact">
+        <div class="flex h-full w-full flex-col gap-[2.5rem] px-0 pl-0 md:px-2">
+            <div class="flex w-full flex-col lg:flex-row">
+                <div class="flex w-full flex-col bg-[#0f0f0f] pb-24 pt-5 lg:w-1/2 px-6 lg:px-28 gap-10">
+                    <div class="flex flex-col gap-8">
+                        <h3 class="font-mono uppercase flex gap-2 items-center">
+                            <span
+                                class="text-md font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Contact
+                                us</span>
+                            <div class="py-[0.5px] w-14 bg-[#DCCF90] h-0"></div>
+                        </h3>
+                        <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px]"
+                            style=" font-family: 'Marcellus SC' , serif;">
+                            Get in Touch<br /> with Harem </h1>
+                    </div>
+                    <div>
+                        <div class="flex gap-6 border-b-[1px] border-b-[#23221b] pb-7">
+                            <div>
+                                <div class="h-fit w-fit rounded-full text-[#BC995D] p-2">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <p class="text-[#FBEAD2]">
+                                    49 Allerton Rd, Liverpool L25
+                                    <br />
+                                    7RE Bavette Steak House
+                                    </pc>
+                                <p class="flex gap-2 text-sm text-[#BC995D] items-center">
+                                    <span>Get Direction</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 border-b-[1px] border-b-[#23221b] pb-7 pt-6">
+                            <div>
+                                <div class="h-fit w-fit rounded-full text-[#BC995D] p-2">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <p class="text-[#FBEAD2]">
+                                    01512451500
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 border-b-[1px] border-b-[#23221b] pb-7 pt-6">
+                            <div>
+                                <div class="h-fit w-fit rounded-full text-[#BC995D] p-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <p class="text-[#FBEAD2] border-b-[1px] border-b-[#FBEAD2]">
+                                    hareml@yahoo.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-full flex-col bg-[#0f0f0f] pb-24 pt-5 lg:w-1/2 lg:items-center lg:justify-center">
+                    <div class="w-full px-3 lg:w-3/5 lg:px-0">
+                        <form class="h-full">
+                            <div class="flex gap-4 pt-7">
+                                <div class="flex w-full flex-col gap-6">
+                                    <input placeholder="First Name"
+                                        class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
+
+
+                                    <input placeholder="Phone"
+                                        class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
+
+
+                                    <input placeholder="Email"
+                                        class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
+
+
+                                    <input placeholder="Reason for contacting (optional)"
+                                        class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
+
+
+                                    <textarea placeholder="your Message"
+                                        class="px-4 text-white h-24 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"></textarea>
+
+
+                                </div>
+                            </div>
+                            <div class="flex w-full flex-col pt-7 lg:flex-row">
+                                <button class="w-full bg-[#dccf90] py-3">Contact Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="relative flex h-full w-full items-center justify-center bg-black">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24 gap-8">
+            <div class="w-full flex flex-col gap-4 lg:flex-row">
+                <div
+                    class="w-full lg:w-1/3 flex flex-col justify-center items-center border-b-[1px] border-b-[#2c291d] lg:border-b-0 lg:border-r-[1px] lg:border-r-[#2c291d] gap-6 px-10 py-10">
+                    <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">contact
+                            us</span>
+                    </h3>
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">T.
+                            +12 344 0567899<br /> harem@example.com</span>
+                    </h3>
+                </div>
+                <div
+                    class="w-full lg:w-1/3 flex flex-col justify-center items-center border-b-[1px] border-b-[#2c291d] lg:border-b-0 lg:border-r-[1px] lg:border-r-[#2c291d] gap-6 px-10 py-10">
+                    <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">address</span>
+                    </h3>
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">Piazza
+                            Della Signoria, 12<br /> 21562 . Firenze . Italy</span>
+                    </h3>
+                </div>
+                <div class="w-full lg:w-1/3 flex flex-col justify-center items-center gap-6 px-10 py-10">
+                    <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Opening
+                            hours</span>
+                    </h3>
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">Everyday
+                            : From 12.30 To 23.00<br /> Kitchen Closes At 22.00</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="flex gap-6 items-center justify-center">
+                <div class="py-[0.5px] lg:w-[550px] bg-[#DCCF90] h-0 flex "></div>
+                <img src="public/images/haremlogo.png" alt="harem">
+                <div class="py-[0.5px] lg:w-[550px] bg-[#DCCF90] h-0 flex"></div>
+            </div>
+            <div
+                class="w-full flex flex-col items-center justify-center lg:flex-row lg:justify-between gap-4 px-5 lg:px-28">
+                <div class="flex gap-3 text-[#DCCF90]">
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-xs font-thin uppercase text-white leading-[80%] tracking-[2px]">pinterest</span>
+                    </h3>
+                    <i class="fa-solid fa-diamond"></i>
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-xs font-thin uppercase text-white leading-[80%] tracking-[2px]">facebook</span>
+                    </h3>
+                    <i class="fa-solid fa-diamond"></i>
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span
+                            class="text-xs font-thin uppercase text-white leading-[80%] tracking-[2px]">instagram</span>
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="uppercase flex gap-2 items-center justify-center">
+                        <span class="text-xs font-thin uppercase text-white leading-[80%] tracking-[2px]">©
+                            2024 HEREM, ALL RIGHTS RESERVED</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
