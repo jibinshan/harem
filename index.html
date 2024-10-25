@@ -23,6 +23,16 @@
     </script>
     <title>Harem</title>
     <link rel="icon" type="image/png" href="public/images/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "s517Ew2LnIyIeHkzy",
+                });
+            })();
+    </script>
+    <script src="email.js"></script>
 </head>
 
 <body>
@@ -52,11 +62,18 @@
                 <p class="text-[#DCCF90] text-center text-3xl lg:text-6xl font-medium leading-10 lg:leading-[73.6px] tracking-[15px] lg:tracking-[30px] uppercase"
                     style=" font-family: 'Marcellus SC' , serif;">
                     Experience<br /> the Flavors <br />of Turkey</p>
-                <a class=" px-6 py-4 flex w-fit items-center gap-3 bg-[#DCCF90] text-black border-[1px] border-[#FBEAD2] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
-                    href="#contact">
-                    Contact Us
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <div class="bg-transparent flex flex-col lg:flex-row gap-6">
+                    <a class=" px-6 py-4 flex w-fit items-center gap-3 bg-[#DCCF90] text-black border-[1px] border-[#FBEAD2] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
+                        href="#menu">
+                        View Menu
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class=" px-6 py-4 flex w-fit items-center gap-3 bg-[#DCCF90] text-black border-[1px] border-[#FBEAD2] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
+                        href="#book">
+                        Book A Table
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -64,18 +81,18 @@
         <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
             <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
                 <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
-                <span class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">About
-                    us</span>
+                <span class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Welcome
+                </span>
                 <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
             </h3>
             <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
                 style=" font-family: 'Marcellus SC' , serif;">
                 A Journey Through<br /> Turkish Flavors </h1>
             <p class="lg:max-w-[600px] px-4 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
-                Established in the heart of [City Name], Harem brings the rich culinary traditions of Turkey to your
-                table. Our chefs craft each dish with authentic Turkish ingredients and techniques passed down through
-                generations. The name 'Harem' reflects the warmth, elegance, and care with which we treat our guests - a
-                tribute to the royal palaces of the Ottoman Empire, where the finest food and hospitality were offered.
+                Welcome to Harem, where we bring you the authentic flavors of Turkish cuisine, renowned worldwide for
+                its rich taste and heritage. We take great pride in sourcing and preparing only the finest ingredients.
+                At Harem, you can enjoy wholesome, uncomplicated dishes in a warm and inviting atmosphere, complemented
+                by exceptional service. We look forward to making your experience memorable. Thank you for choosing us!
             </p>
 
         </div>
@@ -95,17 +112,18 @@
                 <div class="flex flex-col gap-5">
                     <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-start"
                         style=" font-family: 'Marcellus SC' , serif;">
-                        A Journey Through<br /> Turkish Flavors </h1>
+                        Passion for
+                        <br />
+                        Traditional <br />
+                        Flavors
+                    </h1>
                     <p class="lg:max-w-[600px] text-start font-light leading-[160%] text-[#C1B6A6] md:px-0">
-                        Established in the heart of [City Name], Harem brings the rich culinary traditions of Turkey to
-                        your
-                        table. Our chefs craft each dish with authentic Turkish ingredients and techniques passed down
-                        through
-                        generations. The name 'Harem' reflects the warmth, elegance, and care with which we treat our
-                        guests
-                        - a
-                        tribute to the royal palaces of the Ottoman Empire, where the finest food and hospitality were
-                        offered.
+                        At Harem, our love for authentic Turkish cuisine drives everything we do. Inspired by Turkey’s
+                        rich culinary traditions, we are dedicated to bringing the timeless flavors and aromas of our
+                        culture to your table. Each dish honors the traditional techniques and recipes passed down
+                        through generations, crafted with care and passion. From the vibrant spices of Anatolia to the
+                        freshest local ingredients, our goal is to provide you with a dining experience that truly
+                        reflects the heart of Turkish cuisine.
                     </p>
                 </div>
                 <a class=" px-6 py-4 flex w-fit items-center gap-3 border-[1px] border-[#BC995D] text-[#BC995D] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
@@ -117,7 +135,7 @@
         </div>
     </section>
 
-    <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6">
+    <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6" id="menu">
         <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
             <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
                 <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
@@ -185,6 +203,22 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-7">
+                <a class=" px-6 py-4 flex w-fit h-fit items-center gap-3 bg-[#505c42] text-[#DCCF90] border-[1px] lg:mt-12
+                border-[#505c42] transition-colors uppercase text-sm tracking-[1.96px] font-[600]" href="">
+                    <span> View our main menu</span>
+                </a>
+                <a class=" px-6 py-4 flex w-fit h-fit items-center gap-3 bg-[#505c42] text-[#DCCF90] border-[1px] lg:mt-12
+                border-[#505c42] transition-colors uppercase text-sm tracking-[1.96px] font-[600]" href="">
+                    <span> View our Drinks menu</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="relative flex h-screen w-full items-center justify-center bg-[#454e3b] px-6" id="book">
+        <div class="flex h-full w-full max-w-[1300px] items-center justify-center gap-[1.2rem] py-12">
+            <iframe src="https://booking.resdiary.com/widget/Standard/MoorishTurkishCuisine/55571"
+                style="width: 100%; height: 620px;"></iframe>
         </div>
     </section>
     <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6">
@@ -199,9 +233,10 @@
                 style=" font-family: 'Marcellus SC' , serif;">
                 Unforgettable<br /> Dining Experience </h1>
             <p class="lg:max-w-[600px] px-2 font-light leading-[160%] text-center text-[#C1B6A6] md:px-0">
-                Bavette was born from a passion for bringing the finest cuts of beef to the table, with a commitment to
-                sustainability and premium quality. Every dish is a labor of love, crafted by our experienced chefs who
-                handpick each cut to ensure perfection.
+                At Harem, we bring you an unforgettable dining experience with genuine Turkish flavors, thoughtfully
+                prepared using traditional recipes and premium ingredients. Indulge in our warm hospitality and
+                outstanding service in a cozy, inviting setting, where every bite showcases the vibrant culinary
+                traditions of Turkey.
             </p>
             <div class="flex flex-col lg:flex-row lg:gap-12 gap-6 lg:px-24 px-8 mt-8">
                 <div class="bg-[#181818]">
@@ -211,8 +246,9 @@
                             style=" font-family: 'Marcellus SC' , serif;">
                             Food</h1>
                         <p class="lg:max-w-[600px] font-light text-start text-[#C1B6A6] md:px-0">
-                            Bavette was born from a passion for bringing the finest cuts of beef to the table, with a
-                            commitment to sustainability.
+                            At Harem, we bring the rich flavors of Turkish cuisine to your table, offering authentic
+                            dishes crafted with fresh ingredients and traditional recipes passed down through
+                            generations.
                         </p>
                     </div>
                 </div>
@@ -223,8 +259,8 @@
                             style=" font-family: 'Marcellus SC' , serif;">
                             Drinks</h1>
                         <p class="lg:max-w-[600px] font-light text-start text-[#C1B6A6] md:px-0">
-                            Bavette was born from a passion for bringing the finest cuts of beef to the table, with a
-                            commitment to sustainability.
+                            We offer a variety of traditional Turkish beverages, from refreshing ayran to bold Turkish
+                            coffee and fragrant teas, all crafted to perfectly complement your meal.
                         </p>
                     </div>
                 </div>
@@ -235,8 +271,8 @@
                             style=" font-family: 'Marcellus SC' , serif;">
                             Atmosphere</h1>
                         <p class="lg:max-w-[600px]  font-light text-start text-[#C1B6A6] md:px-0">
-                            Bavette was born from a passion for bringing the finest cuts of beef to the table, with a
-                            commitment to sustainability.
+                            At Harem, you`ll enjoy a warm and welcoming ambiance that combines modern comfort with the
+                            timeless charm of traditional Turkish hospitality.
                         </p>
                     </div>
                 </div>
@@ -256,9 +292,11 @@
                 style=" font-family: 'Marcellus SC' , serif;">
                 Private <br /> & Group Dining </h1>
             <p class="lg:max-w-[600px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
-                At Bavette, we specialize in creating memorable dining experiences, whether you're seeking an intimate
-                gathering or a grand celebration. Our private and group dining options are designed to meet your unique
-                needs with personalized service, exceptional food, and a welcoming atmosphere.
+                For private and group dining, Harem provides an ideal setting for an unforgettable experience, whether
+                it's a family gathering, celebration, or business event. With our authentic Turkish cuisine, tailored
+                service, and inviting atmosphere, we guarantee your group will have a truly memorable meal together. To
+                book your private or group dining experience, please visit our Contact Us section for more details and
+                reservations.
             </p>
             <a class=" px-6 py-4 flex w-fit items-center gap-3 border-[1px] border-[#BC995D] text-[#BC995D] transition-colors uppercase text-sm tracking-[1.96px] font-[600]"
                 href="#contact">
@@ -269,6 +307,7 @@
     </section>
     <section class="relative flex h-full w-full items-center justify-center bg-[#0f0f0f] px-6">
         <div class="flex h-full w-full flex-col items-center justify-center gap-6 py-8 md:py-24">
+
             <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
                 <div class="py-[1px] w-14 bg-[#DCCF90] h-0"></div>
                 <span
@@ -278,7 +317,9 @@
             <h1 class="text-4xl font-medium font-mono uppercase text-[#DCCF90] leading-[50px] tracking-[5px] text-center"
                 style=" font-family: 'Marcellus SC' , serif;">
                 Hear Our Guests </h1>
-            <div class="flex flex-col lg:flex-row lg:gap-12 gap-6 lg:px-24 px-8 mt-8">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-e2418408-29ff-4b1d-868a-100002e5a64c" data-elfsight-app-lazy></div>
+            <!--<div class="flex flex-col lg:flex-row lg:gap-12 gap-6 lg:px-24 px-8 mt-8">
                 <div class="bg-[#181818] pb-11">
                     <div class="px-7 py-7 flex flex-col gap-6">
                         <div class="flex gap-3">
@@ -360,7 +401,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="flex h-full w-full items-center justify-center bg-[#0f0f0f] pt-8" id="contact">
@@ -386,15 +427,21 @@
                                 </div>
                             </div>
                             <div class="flex flex-col gap-4">
-                                <p class="text-[#FBEAD2]">
-                                    49 Allerton Rd, Liverpool L25
-                                    <br />
-                                    7RE Bavette Steak House
-                                    </pc>
-                                <p class="flex gap-2 text-sm text-[#BC995D] items-center">
-                                    <span>Get Direction</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </p>
+                                <a
+                                    href="https://www.google.com/maps/place/Harem+Lounge/@52.5422332,-1.3690984,15z/data=!4m6!3m5!1s0x48775b000f72a581:0xa9f58c8362b402d!8m2!3d52.5422332!4d-1.3690984!16s%2Fg%2F11w4c7qs18?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D">
+                                    <p class="text-[#FBEAD2]">
+                                        80 Castle St,
+                                        <br />
+                                        Hinckley LE10 1DD, United Kingdom
+                                    </p>
+                                </a>
+                                <a
+                                    href="https://www.google.com/maps/place/Harem+Lounge/@52.5422332,-1.3690984,15z/data=!4m6!3m5!1s0x48775b000f72a581:0xa9f58c8362b402d!8m2!3d52.5422332!4d-1.3690984!16s%2Fg%2F11w4c7qs18?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D">
+                                    <p class="flex gap-2 text-sm text-[#BC995D] items-center">
+                                        <span>Get Direction</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </p>
+                                </a>
                             </div>
                         </div>
                         <div class="flex items-center gap-6 border-b-[1px] border-b-[#23221b] pb-7 pt-6">
@@ -404,9 +451,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col gap-4">
-                                <p class="text-[#FBEAD2]">
-                                    01512451500
-                                </p>
+                                <a href="tel:+44 1165077216" class="text-[#FBEAD2]">+44 1165077216</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-6 border-b-[1px] border-b-[#23221b] pb-7 pt-6">
@@ -428,30 +473,32 @@
                         <form class="h-full">
                             <div class="flex gap-4 pt-7">
                                 <div class="flex w-full flex-col gap-6">
-                                    <input placeholder="First Name"
+                                    <input placeholder="First Name" type="text" name="from_name" id="from_name" required
                                         class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
 
 
-                                    <input placeholder="Phone"
+                                    <input placeholder="Phone" type="text" name="phone" id="phone" required
                                         class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
 
 
-                                    <input placeholder="Email"
+                                    <input placeholder="Email" type="email" name="email" id="email" required
                                         class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
 
 
-                                    <input placeholder="Reason for contacting (optional)"
+                                    <input placeholder="Reason for contacting (optional)" type="text" name="reason"
+                                        id="reason"
                                         class="px-4 h-12 text-white rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0" />
 
 
-                                    <textarea placeholder="your Message"
+                                    <textarea placeholder="your Message" type="text" name="message" id="message"
+                                        required
                                         class="px-4 text-white h-24 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"></textarea>
 
 
                                 </div>
                             </div>
                             <div class="flex w-full flex-col pt-7 lg:flex-row">
-                                <button class="w-full bg-[#dccf90] py-3">Contact Us</button>
+                                <button class="w-full bg-[#dccf90] py-3" onclick="sendmail()">Contact Us</button>
                             </div>
                         </form>
                     </div>
@@ -478,9 +525,11 @@
                             us</span>
                     </h3>
                     <h3 class="uppercase flex gap-2 items-center justify-center">
-                        <span
-                            class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">T.
-                            +12 344 0567899<br /> harem@example.com</span>
+                        <span class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">
+                            <a href="tel:+44 1165077216">
+                                T. 1165077216
+                            </a>
+                            <br /> harem@example.com</span>
                     </h3>
                 </div>
                 <div
@@ -489,22 +538,46 @@
                         <span
                             class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">address</span>
                     </h3>
-                    <h3 class="uppercase flex gap-2 items-center justify-center">
-                        <span
-                            class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">Piazza
-                            Della Signoria, 12<br /> 21562 . Firenze . Italy</span>
-                    </h3>
+                    <a
+                        href="https://www.google.com/maps/place/Harem+Lounge/@52.5422332,-1.3690984,15z/data=!4m6!3m5!1s0x48775b000f72a581:0xa9f58c8362b402d!8m2!3d52.5422332!4d-1.3690984!16s%2Fg%2F11w4c7qs18?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D">
+                        <h3 class="uppercase flex gap-2 items-center justify-center">
+                            <span
+                                class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">Piazza
+                                80 Castle St, Hinckley
+                                <br />
+                                LE10 1DD, United Kingdom
+                            </span>
+                        </h3>
+                    </a>
                 </div>
-                <div class="w-full lg:w-1/3 flex flex-col justify-center items-center gap-6 px-10 py-10">
-                    <h3 class="font-mono uppercase flex gap-2 items-center justify-center">
+                <div class="w-full lg:w-1/3 flex flex-col justify-center items-start gap-6 px-10 py-10">
+                    <h3 class="font-mono uppercase flex gap-2 items-center justify-start">
                         <span
                             class="text-lg font-thin font-mono uppercase text-[#DCCF90] leading-[80%] tracking-[5px]">Opening
                             hours</span>
                     </h3>
                     <h3 class="uppercase flex gap-2 items-center justify-center">
-                        <span
-                            class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-center">Everyday
-                            : From 12.30 To 23.00<br /> Kitchen Closes At 22.00</span>
+                        <span class="text-sm font-thin uppercase text-white leading-[25px] tracking-[2px] text-start">We
+                            are open 7 days a week<br /> Thursday
+                            9 am-11 pm
+                            <br />
+                            Friday
+                            9 am-11 pm
+                            <br />
+                            Saturday
+                            9 am-11 pm
+                            <br />
+                            Sunday
+                            9 am-11 pm
+                            <br />
+                            Monday
+                            9 am-11 pm
+                            <br />
+                            Tuesday
+                            9 am-11 pm
+                            <br />
+                            Wednesday
+                            9 am-11 pm</span>
                     </h3>
                 </div>
             </div>
